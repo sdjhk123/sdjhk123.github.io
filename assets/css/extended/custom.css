@@ -1,25 +1,13 @@
 /* ===========================================================
    本站自定义样式
-   1. 段首缩进两字（中文排版习惯）
-   2. 文末署名排版
-   3. 引用块（诗词原文）
-   4. 划掉句式（误）
+   1. 文末署名排版
+   2. 引用块（诗词原文）
+   3. 划掉句式（误）
+
+   注：正文段落一律顶行，不缩进、不做首字放大（用户明确要求）
    =========================================================== */
 
-/* --- 1. 段首缩进两字 --- */
-.post-content > p {
-  text-indent: 2em;
-}
-
-/* 列表、引用、代码块不参与缩进 */
-.post-content li,
-.post-content blockquote p,
-.post-content td,
-.post-content th {
-  text-indent: 0;
-}
-
-/* --- 2. 文末署名 --- */
+/* --- 1. 文末署名 --- */
 .post-signature {
   margin-top: 2.6rem;
   text-align: right;
@@ -37,7 +25,7 @@
   opacity: 0.6;
 }
 
-/* --- 3. 引用块（诗词原文） --- */
+/* --- 2. 引用块（诗词原文） --- */
 .post-content blockquote {
   margin: 1.4rem 0 0.6rem;
   padding: 0.1rem 0 0.1rem 1rem;
@@ -46,7 +34,7 @@
   letter-spacing: 0.04em;
 }
 
-/* --- 4. 划掉句式（误） --- */
+/* --- 3. 划掉句式（误） --- */
 .post-content del {
   text-decoration: line-through;
   text-decoration-thickness: 1px;
