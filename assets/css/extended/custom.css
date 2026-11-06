@@ -1,28 +1,14 @@
 /* ===========================================================
    本站自定义样式
    1. 段首缩进两字（中文排版习惯）
-   2. 首字下沉：正文第一个段落的首字放大（类似英文作品）
-   3. 文末署名排版
+   2. 文末署名排版
+   3. 引用块（诗词原文）
+   4. 划掉句式（误）
    =========================================================== */
 
 /* --- 1. 段首缩进两字 --- */
 .post-content > p {
   text-indent: 2em;
-}
-
-/* 首段不缩进，因为首字要下沉 */
-.post-content > p:first-of-type {
-  text-indent: 0;
-}
-
-/* --- 2. 首字下沉 --- */
-.post-content > p:first-of-type::first-letter {
-  float: left;
-  font-size: 2.8em;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0.06em 0.18em 0 0;
-  color: var(--primary);
 }
 
 /* 列表、引用、代码块不参与缩进 */
@@ -33,7 +19,7 @@
   text-indent: 0;
 }
 
-/* --- 3. 文末署名 --- */
+/* --- 2. 文末署名 --- */
 .post-signature {
   margin-top: 2.6rem;
   text-align: right;
@@ -51,7 +37,7 @@
   opacity: 0.6;
 }
 
-/* --- 4. 引用块（诗词原文） --- */
+/* --- 3. 引用块（诗词原文） --- */
 .post-content blockquote {
   margin: 1.4rem 0 0.6rem;
   padding: 0.1rem 0 0.1rem 1rem;
@@ -60,16 +46,10 @@
   letter-spacing: 0.04em;
 }
 
-/* --- 5. 划掉句式（误） --- */
+/* --- 4. 划掉句式（误） --- */
 .post-content del {
   text-decoration: line-through;
   text-decoration-thickness: 1px;
   text-decoration-color: var(--primary);
   color: var(--secondary);
-}
-
-@media (max-width: 600px) {
-  .post-content > p:first-of-type::first-letter {
-    font-size: 2.6em;
-  }
 }
