@@ -1,0 +1,7 @@
+public/
+resources/_gen/
+assets/css/extended/*.css.bak
+.hugo_build.lock
+.DS_Store
+Thumbs.db
+.vscode/
