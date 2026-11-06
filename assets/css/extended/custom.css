@@ -1,0 +1,59 @@
+/* ===========================================================
+   本站自定义样式
+   1. 段首缩进两字（中文排版习惯）
+   2. 首字下沉：正文第一个段落的首字放大（类似英文作品）
+   3. 文末署名排版
+   =========================================================== */
+
+/* --- 1. 段首缩进两字 --- */
+.post-content > p {
+  text-indent: 2em;
+}
+
+/* 首段不缩进，因为首字要下沉 */
+.post-content > p:first-of-type {
+  text-indent: 0;
+}
+
+/* --- 2. 首字下沉 --- */
+.post-content > p:first-of-type::first-letter {
+  float: left;
+  font-size: 3.2em;
+  font-weight: 700;
+  line-height: 0.9;
+  padding-top: 0.06em;
+  padding-right: 0.08em;
+  color: var(--primary);
+}
+
+/* 列表、引用、代码块不参与缩进 */
+.post-content li,
+.post-content blockquote p,
+.post-content td,
+.post-content th {
+  text-indent: 0;
+}
+
+/* --- 3. 文末署名 --- */
+.post-signature {
+  margin-top: 2.6rem;
+  text-align: right;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  color: var(--secondary);
+}
+
+.post-signature .sig-author {
+  font-weight: 500;
+}
+
+.post-signature .sig-sep {
+  margin: 0 0.4em;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .post-content > p:first-of-type::first-letter {
+    font-size: 2.6em;
+  }
+}

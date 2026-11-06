@@ -1,0 +1,9 @@
+{{- /* 文末署名：作者 + 创作日期（具体到日）。数据来自 front matter 或栏目 _index.md 的 cascade。 */ -}}
+{{- if not .Params.hideSignature }}
+{{- $author := .Params.author | default site.Params.author }}
+<div class="post-signature">
+  <span class="sig-author">{{ $author }}</span>
+  <span class="sig-sep">·</span>
+  <time class="sig-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+</div>
+{{- end }}
