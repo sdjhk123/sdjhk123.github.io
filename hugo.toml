@@ -10,69 +10,69 @@ summaryLength = 70
 timeZone = "Asia/Shanghai"
 
 [pagination]
-  pagerSize = 10
+pagerSize = 10
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 [params]
-  env = "production"
-  description = "记录技术、思考与生活"
-  keywords = ["博客", "技术", "笔记"]
-  author = "Sdjhk123"
-  DateFormat = "2006-01-02"
-  defaultTheme = "auto"
-  disableThemeToggle = false
+env = "production"
+description = "记录个人随笔"
+keywords = ["文学", "技术", "杂感"]
+author = "Sdjhk123"
+DateFormat = "2006-01-02"
+defaultTheme = "auto"
+disableThemeToggle = false
 
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  ShowFullTextinRSS = true
-  ShowToc = true
-  TocOpen = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+ShowFullTextinRSS = true
+ShowToc = true
+TocOpen = false
 
-  [params.homeInfoParams]
-    Title = "你好，我是 Sdjhk123"
-    Content = "这里记录我的技术笔记、阅读思考与日常。随手写，慢慢积累。"
+[params.homeInfoParams]
+Title = "Sdjhk123"
+Content = "这里记录我日常的一些随笔，覆盖范围广，比较随意。"
 
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/sdjhk123"
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/sdjhk123"
 
-  [[params.socialIcons]]
-    name = "rss"
-    url = "/index.xml"
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
 
-  [params.fuseOpts]
-    isCaseSensitive = false
-    includeScore = true
-    minMatchCharLength = 2
-    keys = ["title", "permalink", "summary", "content"]
-
-[[menu.main]]
-  identifier = "posts"
-  name = "文章"
-  url = "/posts/"
-  weight = 10
+[params.fuseOpts]
+isCaseSensitive = false
+includeScore = true
+minMatchCharLength = 2
+keys = ["title", "permalink", "summary", "content"]
 
 [[menu.main]]
-  identifier = "archives"
-  name = "归档"
-  url = "/archives/"
-  weight = 20
+identifier = "posts"
+name = "文章"
+url = "/posts/"
+weight = 10
 
 [[menu.main]]
-  identifier = "tags"
-  name = "标签"
-  url = "/tags/"
-  weight = 30
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 20
 
 [[menu.main]]
-  identifier = "search"
-  name = "搜索"
-  url = "/search/"
-  weight = 40
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 30
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 40

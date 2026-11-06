@@ -5,3 +5,4 @@ assets/css/extended/*.css.bak
 .DS_Store
 Thumbs.db
 .vscode/
+.workbuddy/
