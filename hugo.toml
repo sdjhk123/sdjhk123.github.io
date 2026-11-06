@@ -66,6 +66,12 @@ url = "/archives/"
 weight = 20
 
 [[menu.main]]
+identifier = "categories"
+name = "分类"
+url = "/categories/"
+weight = 25
+
+[[menu.main]]
 identifier = "tags"
 name = "标签"
 url = "/tags/"
