@@ -23,6 +23,7 @@ author = "Sdjhk123"
 DateFormat = "2006-01-02"
 defaultTheme = "auto"
 disableThemeToggle = false
+comments = true
 
 ShowReadingTime = true
 ShowShareButtons = true
@@ -52,6 +53,14 @@ isCaseSensitive = false
 includeScore = true
 minMatchCharLength = 2
 keys = ["title", "permalink", "summary", "content"]
+
+# Giscus 评论：数据存于本仓库的 GitHub Discussions
+# categoryId 为空时评论区不渲染
+[params.giscus]
+repo = "sdjhk123/sdjhk123.github.io"
+repoId = "R_kgDOVkwRBA"
+category = "Announcements"
+categoryId = "DIC_kwDOVkwRBM4DKuud"
 
 [[menu.main]]
 identifier = "posts"

@@ -41,3 +41,17 @@
   text-decoration-color: var(--primary);
   color: var(--secondary);
 }
+
+/* --- 4. 评论区 --- */
+.comments {
+  margin-top: 3rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.comments-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: var(--primary);
+}
